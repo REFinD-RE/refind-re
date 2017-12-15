@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>The Computational Linguistics Scientific Summarization Shared Task (CL-SciSumm 2017)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Computational Linguistics Scientific Summarization Shared Task (CL-SciSumm 2016)">
+    <meta name="author" content="Min-Yen KAN">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      p {
+        text-align: justify;
+      }
+      li {
+        text-align: justify;
+      }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+ 
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">CL-SciSumm 2017</a>
+		</div>
+
+		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="nav-collapse">
+            <ul class="nav navbar-nav">
+				<li><a href="#cfp">Call for Participation</a></li>
+				<li><a href="#c">Corpus</a></li>
+				<li><a href="#d">Dates</a></li>
+				<li><a href="#b">Background</a></li>
+				<li><a href="#w">BIRNDL 2017 Workshop</a></li>
+				<li><a href="#oc">Organizing Committee</a></li>
+				<!--
+				 <li class="dropdown" id="menu2">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#menu2n">
+						Previous Shared Task
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://github.com/WING-NUS/scisumm-corpus">1st CL SciSumm</a></li>
+					</ul>
+				 </li>
+				-->
+          </ul>
+          </div><!--/.nav-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		
+    <div class="hero-unit">
+	<img title="Photo Credits: alx_stuart @ Flickr" src ="paper_s.jpg" style="float:left; padding:17px;"/>
+    <h2>The 3<sup>rd</sup> Computational Linguistics Scientific Document Summarization Shared Task (CL-SciSumm 2017)</h2>
+    <p>Results will be presented at the <a href="http://wing.comp.nus.edu.sg/birndl-sigir2017/">BIRNDL 2017 Workshop</a>, 
+	a workshop co-located after <br><a href="http://sigir.org/sigir2017/" target="_new">the ACM SIGIR Conference on Research and 
+	Development in Information Retrieval</a>, Tokyo, Japan<br> Task Sponsored by 
+	<a href="http://research.microsoft.com/en-us/labs/asia/" target="_new">Microsoft Research Asia</a></p>
+    </div> 
+
+    <div class="container">
+      <div class="alert alert-info">
+		Last updated: Fri Aug 11 01:32:16 SGT 2017
+      </div>
+
+      <div class="alert alert-info">
+                <font color="red">Updates!</font> 
+		<ul><li>System registration deadline extended to <b>June 4th</b>.</li>
+		<li>We are happy to announce that <a href="https://www.cl.cam.ac.uk/~sht25/" target="_new">Prof. Simone Teufel</a> will deliver the <a href="http://wing.comp.nus.edu.sg/birndl-sigir2017/#prg" target="_new">keynote</a> at the workshop!</li>
+		</ul>
+      </div>
+
+
+      <div class="row">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style " style="">
+		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+		<a class="addthis_button_tweet"></a>
+		<a class="addthis_button_pinterest_pinit"></a>
+		<a class="addthis_counter addthis_pill_style"></a>
+		</div>
+		<script type="text/javascript" src="addthis_widget.js"></script>
+		<!-- AddThis Button END -->
+
+<!-- ------------------------------------------------------------ -->
+
+<a name="cfp"></a><p>&nbsp;</p><p>&nbsp;</p>
+
+<h2>Call for Participation</h2>
+
+<p>You are invited to participate in the CL-SciSumm Shared Task at
+BIRNDL 2017. The shared task will be on automatic paper summarization
+in the Computational Linguistics (CL) domain. 
+
+This year also we will invite the authors of selected system papers 
+at the CL-SciSumm Shared Task, to submit extended versions to a special 
+issue in International Journal of Digital Libraries (IJDL). The special issue 
+will revolve on themes associated with the BIRNDL workshop.</p>
+
+<p>This task follows up on the successful 
+<a href="http://wing.comp.nus.edu.sg/cl-scisumm2016/" target="_new">
+CLScisumm-16</a> at the <a href="http://wing.comp.nus.edu.sg/birndl-jcdl2016/">BIRNDL</a>
+workshop co-located with JCDL 2016, Rutgers, NJ, USA and 
+the CL Pilot Task conducted as a part of 
+the <a href="http://www.nist.gov/tac/2014/BiomedSumm/">BiomedSumm Track 
+at the Text Analysis Conference 2014</a> (TAC 2014). 
+
+Over the two editions, a
+training corpus of ten topics and a development corpus of ten more topics  
+from CL research papers were released. Participants were invited to 
+enter their systems in a task-based evaluation. We also released the 
+<a href="https://github.com/WING-NUS/scisumm-corpus"> manually
+annotated dataset</a>, comprising of ACL Computational Linguistics
+research papers and summaries. 
+The output summaries are of two types: faceted summaries of the 
+traditional self-summary (the abstract) and the community summary 
+(the collection of citation sentences ‘citances’). We also 
+group the citances by the facets of the text that they refer to.
+In our proposed shared task, we will expand the corpus with a
+new test dataset of 10 topics (closed for evaluation).
+</p> 
+
+<p>The CL-SciSumm 2017 corpus is expected to be of interest to a broad 
+community including those working in computational linguistics and 
+natural language processing, text summarization, discourse structure 
+in scholarly discourse, paraphrase, textual entailment and text 
+simplification.
+</p>
+
+<p>We have secured support for the costs of the shared task annotation
+from <a href="http://research.microsoft.com/en-us/labs/asia/">Microsoft
+Research Asia</a>.  The National University of Singapore will be
+primarily responsible for the task's oversight.
+</p>
+
+<h3>Tasks</h3>
+
+<p><b>Given</b>: A topic consisting of a Reference Paper (RP) and Citing 
+Papers (CPs) that all contain citations to the RP. In each CP, the text 
+spans (i.e., citances) have been identified that pertain to a particular 
+citation to the RP.</p>
+ 
+<p><b>Task 1A</b>: For each citance, identify the spans of text (cited text
+spans) in the RP that most accurately reflect the citance. These are
+of the granularity of a sentence fragment, a full sentence, or several
+consecutive sentences (no more than 5).</p>
+ 
+<p><b>Task 1B</b>: For each cited text span, identify what facet of the
+paper it belongs to, from a predefined set of facets.</p>
+
+<p><b>Task 2 (optional bonus task)</b>: Finally, generate a structured 
+summary of the RP from the cited text spans of the RP. The length of the 
+summary should not exceed 250 words.</p>
+
+<p><b>Evaluation</b>: Task 1 will be scored by overlap of text spans 
+measured by number of sentences in the system output vs the gold standard 
+created by human annotators. Task 2 will be scored using the ROUGE family
+of metrics between (i) the system output and the gold standard summary from
+the reference spans (ii) the system output and the asbtract of the 
+reference paper.</p>
+
+<!--<h3>Registration</h3>-->
+
+<p>Organizations wishing to participate in the CL Shared Task track 
+at BIRNDL 2017 are invited to register on EasyChair
+<p><a href="https://easychair.org/conferences/?conf=birndl2017">https://easychair.org/conferences/?conf=birndl2017</a></p>
+by May 31st. Participants are advised to register as soon as
+possible in order to receive timely access to evaluation resources,
+including development and testing data. Registration for the task 
+does not commit you to participation - but is helpful to know for
+planning. All participants who submit system runs are welcome to
+present their system at the BIRNDL Workshop.</p>
+
+<p>Dissemination of CL-SciSumm work and results other than in the
+workshop proceedings is welcomed, but the conditions of participation
+specifically preclude any advertising claims based on these
+results. Any questions about conference participation may be sent 
+to the organizers mentioned below.
+</p>
+
+<a name="c"></a><p>&nbsp;</p><p>&nbsp;</p>
+<h2>Corpus</h2>
+
+<p><b><a href="https://github.com/WING-NUS/scisumm-corpus">https://github.com/WING-NUS/scisumm-corpus</a></b></p>
+
+<p>The corpus for the CL-SciSumm task has been created by randomly
+sampling ten documents from the ACL Anthology corpus and selecting
+their citing papers. The training, development and testing set will 
+be made publicly available at the GitHub link above at dates 
+specified below.
+
+</p><p>The <b>training set of 10 articles</b> is already available for
+download 
+and can be used by participants to pilot their systems. <b>The
+development set of 10 articles</b>, a part of the same corpus, will be
+released in April, which participants can add to the training set to
+tune their system parameters. Finally <b>the test set of 10 articles</b> 
+will be released in July 1st. The system outputs from the test set should 
+be submitted to the task organizers, for the collation of the final
+results to be presented at the workshop.</p>
+
+The <b>best performing system</b> on Task - 1a, the core component of Shared Task this 
+year is from NJUST. Here is a recording of <a href="video_njust.wmv">their talk</a>.
+
+<a name="d"></a><p>&nbsp;</p><p>&nbsp;</p>
+<h2>Important Dates</h2>
+
+<p>Please consult the <a href="http://wing.comp.nus.edu.sg/birndl-sigir2017/#d">BIRNDL
+Workshop</a> for official dates for the workshop.</p>
+
+<div class="table-responsive">
+<table class="table table-bordered table-hover table-striped">
+<tbody>
+<tr><th>Event</th><th>Date</th>
+<!--</tr><tr><td>Call for Participation released</td><td></td></tr>-->
+<tr><td>Training Set Release</td><td>May 1</b></td></tr>
+<tr><td>Deadline for Registration and Short System Descriptions Due</td><td><del>May 20</del> <del>May 31</del> June 4</td></tr>
+<!--<tr><td>Development Set Posted</td><td></td></tr>-->
+<!--<tr><td>Notification of Acceptance of Presentation Proposals</td><td>TBD</td></tr>-->
+<tr><td>Test Set Released</td><td>July 1</td></tr>
+<tr><td>System Runs Due</td><td><del>July 15</del> July 22</td></tr>
+<tr><td>Preliminary System Reports Due in EasyChair</td><td>July 30</td></tr>
+<tr><td>Camera-Ready Contributions Due in EasyChair</td><td>TBD</td></tr>
+<tr><td>Participant Presentations at BIRNDL Workshop</td><td>August 11 in Tokyo, Japan</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>All deadlines 
+for the CL-SciSumm shared task
+ are calculated as 11:59pm Baker Island Time (BIT: UTC/GMT-12).  
+
+<!--<i>Block booking of the hotel rooms by participants need to be done before TBD, to ensure early bird rates.</i></p>-->
+
+<a name="b"></a>
+<p>&nbsp;</p><p>&nbsp;</p>
+<h2>Background</h2>
+
+<p>The CL-SciSumm task provides resources to encourage research in a 
+promising direction of scientific paper summarization, which considers 
+the set of citation sentences (i.e., &quot;citances&quot;) that reference a 
+specific paper as a (community created) summary of a topic or paper 
+(Nanba, Kando and Okumura, 2011; Qazvinian and Radev, 2008). Citances 
+for a reference paper are considered a synopses of its key points and 
+also its key contributions and importance within an academic community. 
+The advantage of using citances is that they are embedded with 
+meta-commentary and offer a contextual, interpretative layer to the 
+cited text. The drawback, however, is that though a collection of 
+citances offers a view of the cited paper, it does not consider the 
+context of the target user (Sparck Jones, 2007; Teufel and Moens, 2002; 
+Nenkova and McKeown, 2011; Jaidka, Khoo and Na, 2013a), verify the claim
+ of the citation or provide context from the reference paper, in terms 
+the type of information cited or where it is in the referenced paper.</p>
+ 
+<p>CL-SciSumm explores summarization of scientific research, for the 
+computational linguistics research domain. An ideal summary of 
+computational linguistics research papers would be able to summarize 
+previous research by drawing comparisons and contrasts between their 
+goals, methods and results, as well as distil the overall trends in the 
+state of the art and their place in the larger academic discourse. 
+Literature surveys and review articles in CL do help readers to gain a 
+gist of the state-of-the-art in research for a topic. However, 
+literature survey writing is labor-intensive and a literature survey is 
+not always available for every topic of interest. What are needed, are 
+resources which automate the synthesis and updating of automatic 
+summaries of CL research papers. </p>
+ 
+<p>Existing scientific summarization systems have automatically 
+generated related work sections for a target paper by instantiating a 
+hierarchical topic tree (Hoang and Kan, 2010), generating model citation
+ sentences (Mohammad et al., 2009) or implementing a literature review 
+framework (Jaidka et al., 2013). However, the limited availability of 
+evaluation resources and human-created summaries constrains research in 
+this area.  The goal of the TAC 2014 CL Shared Task is to highlight the 
+challenges and relevance of the scientific summarization problem, 
+support research in automatic scientific document summarization and 
+provide evaluation resources to push the current state of the art. </p>
+
+<a name="w"></a>
+<p>&nbsp;</p><p>&nbsp;</p>
+<h2>BIRNDL 2017 Workshop</h2>
+
+<p><b><a href="http://wing.comp.nus.edu.sg/birndl-sigir2017">http://wing.comp.nus.edu.sg/birndl-sigir2017</a></b></p>
+
+<p>The BIRNDL 2017 workshop will be held <!--on TBD, --> in Tokyo, 
+, Japan. The workshop is a forum both for presentation of results
+(including failure analyses and system comparisons), and for more
+lengthy system presentations describing techniques used, experiments
+run on the data, and other issues of interest to NLP researchers. TAC
+track participants who wish to give a presentation during the workshop
+will submit a short abstract describing the experiments they
+performed. As there is a limited amount of time for oral
+presentations, the abstracts will be used to determine which
+participants are asked to speak and which will present in a poster
+session.</p>
+
+<a name="oc"></a>
+<p>&nbsp;</p><p>&nbsp;</p>
+<h2>Organising Committee</h2>
+
+<dl>
+  <dt><a href="http://www.comp.nus.edu.sg/~a0092669/">Muthu Kumar Chandrasekaran</a> - <a href="mailto:muthu.chandra@comp.nus.edu.sg">muthu.chandra@comp.nus.edu.sg</a> </dt>
+  <dd>
+<p>He is broadly interested in natural language processing and 
+its applications to information retrieval; specifically, in retrieving 
+and organising information from asynchronous conversation media such 
+as scholarly publications, discussion and debate forums. He was on 
+the organizing committee of the CL-SciSumm 2016 Shared Task, the 
+CL-SciSumm 2014 Pilot Task and the BIRNDL workshop. He also reviews 
+for BIR, ACL and EMNLP conferences. He believes communication of 
+scholarly research needs to be summarized to avoid redundant or 
+outdated research and ensure faster progress to pressing problems. 
+He is currently doing his Ph.D. research on a similarly motivated 
+problem on Massive Open Online Course (MOOC) discussion forums on 
+recommending salient student discussions for instructors to intervene 
+given their limited bandwidth.</p>
+  </dd>
+  <dt><a href="http://kokiljaidka.wordpress.com/">Kokil Jaidka</a> - <a href="mailto:jaidka@sas.upenn.edu">jaidka@sas.upenn.edu</a></dt>
+  <dd>
+
+<p>Dr Kokil Jaidka is a postdoctoral researcher in Computer Science 
+and Chief Technology Officer for the World Wellbeing Project at the 
+University of Pennsylvania. She has been the lead coordinator of all 
+aspects of the CL-SciSumm Shared Task since 2014, and she also 
+co-organized the 1ST BIRNDL workshop. She has expertise working on 
+large datasets using machine learning and unsupervised approaches on 
+textual data, and in the specific areas of multi-document summarization 
+and applied linguistics. She is a reviewer for Scientometrics, Applied 
+Linguistics and Aslib journal of Information Processing \& Management. 
+Her PhD dissertation involved the development of a literature review 
+framework for the summarization of research papers. Currently, she is 
+conducting social media analyses and user language modeling for opinion 
+mining, behavioral profiling and health outcomes. 
+</p>
+  </dd>
+  <dt><a href="http://www.comp.nus.edu.sg/~kanmy/">Min-Yen Kan</a> - <a href="mailto:kanmy@comp.nus.edu.sg">kanmy@comp.nus.edu.sg</a></dt>
+  <dd>
+<p>My research interests fall under the areas of digital libraries, 
+natural language processing, information retrieval, human-computer 
+interaction. Specifically, they include document structure acquisition, 
+verb analysis, digital library resource annotation and and applied 
+text summarization. My research goal aims to investigate how natural 
+language processing and information retrieval can be applied to 
+improve scholarly publication and knowledge discovery.
+</p>
+</dd>
+</dl>
+
+<a name="l"></a><p>&nbsp;</p><p>&nbsp;</p>
+
+</div></div></body></html>
