@@ -52,6 +52,7 @@
             <ul class="nav navbar-nav">
 				<li><a href="#cfp">Call for Participation</a></li>
 				<li><a href="#c">Corpus</a></li>
+		    		<li><a href="#si">Submission Instructions</a></li>
 				<li><a href="#d">Dates</a></li>
 				<li><a href="#w">IWSPA 2018 Workshop</a></li>
 				<li><a href="#oc">Organizing Committee</a></li>
@@ -174,7 +175,32 @@ to the organizers mentioned below.
  </p>
 <p>We will post the details for the training corpus on February 1, 2018 (11:59 U.S.-CST). Stay tuned!</p>
 
+<a name="si"></a><p>&nbsp;</p><p>&nbsp;</p>
+<h3>Submission Instructions</h3>
+<p><strong>For your system submissions:</strong></p> 
 
+<p>We expect the predicted outputs on the test data as well as your best performing model. </p>
+
+<p><i> <u>For the predicted output:</i> </u> </p>
+<p>The output needs to be a <font face="courier">"<group_id>_submission_<task-type>_<submission_num>.txt"</font> file with the name of the email file and your predicted label: 1 for legitimate email and 0 for phishing email. </p>
+<p>Your <strong>Group-ID</strong> should be either the name of your group or the initials of the last names of all the group members. </p> 
+<p>There is no limit on the number of submissions for a particular task. Your submissions should be numbered sequentially.</p>
+<p>
+	For example:
+If your team name is "BlueTeam" and you are submitting the predictions for the "No Headers" task - your submission file should be <font face="courier">"TeamBlue_submission_noheaders_1.txt"</font> and the file should have the following contents:
+<font face="courier">1.txt 1</font>
+<font face="courier">2.txt </font>
+<font face="courier">...</font>
+</p>
+<p><i> <u>For the model submission:</i> </u> </p>
+<p>	
+We expect you to submit your top performing model on the training data with clear instructions on how to run. This is required so that the results on the test data using that model can be reproduced. The output submission for the TOP model should be labeled with your Group-ID as well as <font face="courier">"TOP"</font> in the name. </p>
+
+<p>	For example, 
+For Team Blue, if "SVM" is the best performer for the "No Headers" subtask: 
+	The model submission will read - <font face="courier">"TeamBlue_TOP_SVM_noheaders"</font> and the output submission for this model will be <font face="courier">"TeamBlue_submission_TOP_noheaders_1.txt"</font>.  
+When we run <font face="courier">"TeamBlue_TOP_SVM_noheaders"</font> model file on the test data we should get exactly the same results Team Blue has reported in <font face="courier">"TeamBlue_submission_TOP_noheaders_1.txt"</font>. </p>	      
+	      
 <a name="d"></a><p>&nbsp;</p><p>&nbsp;</p>
 <h2>Important Dates</h2>
 
@@ -207,7 +233,7 @@ The important deadlines for the Shared Task:
   </tr>
   <tr>
     <td class="tg-yw4l">Model + Results Submission</td>
-    <td class="tg-yw4l"><strike>March 3, 2018</strike>March 5, 2018 (4:59 P.M. CST) (Hard Deadline)</td>
+    <td class="tg-yw4l"><strike>March 3, 2018</strike>March 6, 2018 (11:59 P.M. CST) (Hard Deadline)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">Start of Evaluation</td>
